@@ -22,7 +22,7 @@ foreach($tab as $row)
    'Titolo' => $Titolo,
    'Anno' => $Anno,
    'Amministrazione' => $Amministrazione,
-   'Scheda Applicazione' => $Scheda_Applicazione
+   'Scheda_Applicazione' => $Scheda_Applicazione
  );
  scraperwiki::save_sqlite(array('ID'), $record); 
 }
