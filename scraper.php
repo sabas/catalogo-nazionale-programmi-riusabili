@@ -24,6 +24,6 @@ foreach($tab as $row)
    'Amministrazione' => $Amministrazione,
    'Scheda_Applicazione' => $Scheda_Applicazione
  );
- scraperwiki::save_sqlite(array('ID'), $record); 
+ scraperwiki::save_sqlite(array(), $record); 
 }
 ?>
