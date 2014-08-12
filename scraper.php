@@ -13,10 +13,11 @@ $dom = new simple_html_dom();
 $dom->load($html);
 $tab=$dom->find("table.views-table tbody tr");
 
-
+ var_dump ($tab);
 foreach($tab as $row)
 {
  $row=$row->find("td");
+ var_dump ($row);
  $ID=trim($row[0]);
  $Titolo=trim($row[1]);
  $Anno=trim($row[2]);
@@ -31,6 +32,6 @@ foreach($tab as $row)
    'Scheda Applicazione' => $Scheda_Applicazione
  );
  
-scraperwiki::save_sqlite(array('ID'), $record); 
+//scraperwiki::save_sqlite(array('ID'), $record); 
 }
 ?>
