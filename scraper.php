@@ -11,12 +11,12 @@
 // // Find something on the page using css selectors
 $dom = new simple_html_dom();
 $dom->load($html);
-$tab=$dom->find("table.views-table tbody");
+$tab=$dom->find("table.views-table tbody tr");
 
 
 foreach($tab as $row)
 {
- $row=$table->find("tr td");
+ $row=$row->find("td");
  $ID=trim($row[0]);
  $Titolo=trim($row[1]);
  $Anno=trim($row[2]);
